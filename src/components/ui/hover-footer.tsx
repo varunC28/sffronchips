@@ -88,32 +88,41 @@ export const TextHoverEffect = ({
           />
         </mask>
       </defs>
+      {/* Subtle background guide stroke so the letters are always faintly visible */}
       <text
         x="50%"
         y="50%"
         textAnchor="middle"
         dominantBaseline="middle"
         strokeWidth="0.35"
-        className="fill-transparent stroke-neutral-700 font-black tracking-widest text-7xl font-sans"
-        style={{ opacity: hovered ? 0.7 : 0 }}
+        className="fill-transparent stroke-red-950/40 font-black tracking-widest text-7xl font-sans"
+        style={{ opacity: hovered ? 0.6 : 0.2 }}
       >
         {text}
       </text>
+
+      {/* Infinite looping animated stroke outline */}
       <motion.text
         x="50%"
         y="50%"
         textAnchor="middle"
         dominantBaseline="middle"
         strokeWidth="0.35"
-        className="fill-transparent stroke-red-500/80 font-black tracking-widest text-7xl font-sans"
+        className="fill-transparent stroke-red-500 font-black tracking-widest text-7xl font-sans"
+        style={{
+          filter: "drop-shadow(0 0 6px rgba(229, 35, 42, 0.6))",
+        }}
         initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
         animate={{
-          strokeDashoffset: 0,
-          strokeDasharray: 1000,
+          strokeDashoffset: [1000, 0, 0, -1000],
+          opacity: [0.3, 1, 1, 0.3],
         }}
         transition={{
-          duration: 4,
+          duration: 5,
+          repeat: Infinity,
+          repeatType: "loop",
           ease: "easeInOut",
+          times: [0, 0.42, 0.58, 1],
         }}
       >
         {text}
