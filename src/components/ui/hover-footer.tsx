@@ -185,8 +185,16 @@ export function HoverFooter({
       label: "WhatsApp",
       href: "https://wa.me/919669955869",
     },
-    { icon: <Instagram size={19} />, label: "Instagram", href: "#" },
-    { icon: <Facebook size={19} />, label: "Facebook", href: "#" },
+    {
+      icon: <Instagram size={19} />,
+      label: "Instagram",
+      href: "https://www.instagram.com/sffron_snacks?utm_source=qr",
+    },
+    {
+      icon: <Facebook size={19} />,
+      label: "Facebook",
+      href: "https://www.facebook.com/share/1F7mvrx83c/",
+    },
     { icon: <Phone size={19} />, label: "Call Us", href: "tel:+919669955869" },
   ];
 
@@ -265,6 +273,8 @@ export function HoverFooter({
               <a
                 key={label}
                 href={href}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                 aria-label={label}
                 className="w-8 h-8 rounded-full flex items-center justify-center bg-white/5 border border-white/10 hover:border-red-500/50 hover:text-red-400 hover:bg-white/10 transition-all duration-200"
               >
