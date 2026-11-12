@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- Homepage & Core Product Showcase -->
+  <!-- Homepage & Core Product Showcase (20 Products) -->
   <url>
     <loc>https://sffronchips.netlify.app/</loc>
     <lastmod>2026-11-12</lastmod>
@@ -10,32 +10,102 @@
     <image:image>
       <image:loc>https://sffronchips.netlify.app/sffron-ring-v2.webp</image:loc>
       <image:title>Sffron Masala Ring (28g Pack, MRP ₹10)</image:title>
-      <image:caption>Crispy puffed rings dusted with an authentic blend of spicy Indori masalas. Made in Lasudia Mori, Indore by Indira Enterprises.</image:caption>
+      <image:caption>Crispy puffed rings dusted with an authentic blend of spicy Indori masalas. Light, crunchy, and irresistible.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://sffronchips.netlify.app/sffron-cheese-balls-v2.webp</image:loc>
       <image:title>Sffron Cheese Balls (28g Pack, MRP ₹10)</image:title>
-      <image:caption>Air-puffed golden spheres generously coated in savory, velvety cheese seasoning.</image:caption>
+      <image:caption>Air-puffed golden spheres generously coated in savory, velvety cheese seasoning. Melts right in your mouth.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://sffronchips.netlify.app/sffron-masala-flour-chips-v2.webp</image:loc>
       <image:title>Sffron Spicy Chips (30g Pack, MRP ₹10)</image:title>
-      <image:caption>Finely sliced golden potato crisps infused with fiery red chili for authentic spice lovers.</image:caption>
+      <image:caption>Finely sliced golden potato crisps infused with hot cayenne and fiery red chili spices for true spice lovers.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-ratlami-sev-v2.webp</image:loc>
+      <image:title>Sffron Ratlami Sev (38g Pack, MRP ₹10)</image:title>
+      <image:caption>Legendary Malwa-style thick gram flour sev packed with aromatic ground cloves, black pepper, and hing punch.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-aloo-bhujia-v2.webp</image:loc>
+      <image:title>Sffron Aloo Bhujia (38g Pack, MRP ₹10)</image:title>
+      <image:caption>Delicate strands of golden potato and minty gram flour spiced with signature Indori seasonings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-punjabi-tadka-v2.webp</image:loc>
+      <image:title>Sffron Punjabi Tadka (40g Pack, MRP ₹10)</image:title>
+      <image:caption>Thick, crunchy gram ribbons infused with chatpata carom seeds, cumin, and dried mango spices.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-salt-pepper-chips-v2.webp</image:loc>
+      <image:title>Sffron Salt & Pepper Chips (28g Pack, MRP ₹10)</image:title>
+      <image:caption>Crisp ridged golden potato wafers delicately balanced with pure rock salt and coarse crushed black peppercorns.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-masala-xpress-chips-v2.webp</image:loc>
+      <image:title>Sffron Masala Xpress Chips (28g Pack, MRP ₹10)</image:title>
+      <image:caption>Deeply ridged potato crisps generously dusted with roasted Indori garam masalas, amchur, and fiery red chili.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-ragi-chips-v2.webp</image:loc>
+      <image:title>Sffron Ragi Chips (30g Pack, MRP ₹10)</image:title>
+      <image:caption>Nutritious finger millet chips seasoned with aromatic herbs. Zero maida, zero MSG, pure guilt-free crunch.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-popcorn-cheese-butter-v2.webp</image:loc>
+      <image:title>Sffron Cheese Butter Popcorn (25g Pack, MRP ₹10)</image:title>
+      <image:caption>Fluffy air-popped corn kernels generously glazed with savory cheddar cheese and rich melted dairy butter.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-popcorn-classic-salted-v2.webp</image:loc>
+      <image:title>Sffron Classic Salted Popcorn (25g Pack, MRP ₹10)</image:title>
+      <image:caption>Light, airy popped corn kernels tossed in pure fine sea salt. The timeless cinema crunch in every handful.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-popcorn-peri-peri-v2.webp</image:loc>
+      <image:title>Sffron Peri-Peri Popcorn (25g Pack, MRP ₹10)</image:title>
+      <image:caption>Air-popped gourmet kernels coated in zesty African bird's eye peri-peri seasoning and tangy citrus herbs.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-yellow-salted-puffs-v2.webp</image:loc>
+      <image:title>Sffron Yellow Salted Puffs (25g Pack, MRP ₹10)</image:title>
+      <image:caption>Featherlight golden corn puffs delicately dusted with mild rock salt. Cheerful melt-in-mouth fun for all ages.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-green-salted-puffs-v2.webp</image:loc>
+      <image:title>Sffron Green Salted Puffs (25g Pack, MRP ₹10)</image:title>
+      <image:caption>Air-puffed crispy corn snacks tossed in an invigorating Indori mint and coriander chutney seasoning.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-spicy-chilli-puffs-v2.webp</image:loc>
+      <image:title>Sffron Spicy Chilli Puffs (25g Pack, MRP ₹10)</image:title>
+      <image:caption>Extra crunchy corn puffs seasoned with bold red chili and tangy spices for a daring Indori kick.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-premium-moong-dal-v2.webp</image:loc>
+      <image:title>Sffron Premium Moong Dal (32g Pack, MRP ₹10)</image:title>
+      <image:caption>Golden split green gram pulses dry-roasted to delicate crunch and seasoned with pure rock salt.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-premium-tasty-peanut-v2.webp</image:loc>
+      <image:title>Sffron Premium Tasty Peanut (32g Pack, MRP ₹10)</image:title>
+      <image:caption>Whole crunchy peanuts enveloped in a secret 19-spice gram flour crust. Rich in natural protein.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://sffronchips.netlify.app/saffron-tasty-peanuts-v2.webp</image:loc>
       <image:title>Sffron Tasty Peanuts (32g Pack, MRP ₹10)</image:title>
-      <image:caption>High-protein roasted whole peanuts wrapped in a crispy spicy besan crust.</image:caption>
+      <image:caption>High-protein roasted whole peanuts wrapped in a crispy spicy besan crust. Perfect teatime crunch.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://sffronchips.netlify.app/saffron-tasty-banana-chips-v2.webp</image:loc>
       <image:title>Sffron Banana Chips (25g Pack, MRP ₹10)</image:title>
-      <image:caption>Golden sun-dried banana crisps fried to delicate crunch and lightly dusted with mild salt and spices.</image:caption>
+      <image:caption>Golden sun-dried banana crisps fried to delicate crunch and lightly dusted with signature mild salt and spices.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://sffronchips.netlify.app/saffron-falahari-mixture-v2.webp</image:loc>
-      <image:title>Sffron Upvas Falahari Mixture (40g Pack, MRP ₹10)</image:title>
-      <image:caption>Traditional fasting mixture packed with crisp potato salli, roasted peanuts, cashews, and pure Sendha Namak (rock salt).</image:caption>
+      <image:title>Sffron Falahari Mixture (Upvas Special) (40g Pack, MRP ₹10)</image:title>
+      <image:caption>Traditional fasting mixture packed with crisp potato salli, roasted peanuts, cashews, raisins, and pure Sendha Namak (rock salt).</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://sffronchips.netlify.app/logo.webp</image:loc>

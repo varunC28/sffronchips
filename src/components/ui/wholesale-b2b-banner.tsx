@@ -19,7 +19,7 @@ export function WholesaleB2BBanner({ onNavigateToContact }: WholesaleB2BBannerPr
     {
       title: "Low Trial MOQ (5 Cartons)",
       tagline: "Test Demand With Zero Risk",
-      desc: "Mix and match all 6 varieties in a single 5-carton starter order to discover what flies off your racks fastest before ordering in full pallet volume.",
+      desc: "Mix and match across all 20 snack varieties in a single 5-carton starter order to discover what flies off your racks fastest before ordering in full pallet volume.",
     },
     {
       title: "Same-Day Indore Dispatch",

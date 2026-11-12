@@ -22,7 +22,7 @@ const FAQS_DATA: FAQItem[] = [
     category: "products",
     question: "What is the price of Sffron snack packs?",
     answer:
-      "All our signature snack packs—including Masala Rings, Cheese Balls, Spicy Chips, Tasty Peanuts, Banana Chips, and Falahari Mix—are priced at a universal, affordable MRP of ₹10, making delicious Indori crunch accessible to everyone.",
+      "All 20 of our signature snacks—including Masala Rings, Cheese Balls, Ratlami Sev, Aloo Bhujia, Punjabi Tadka, Ragi Chips, Gourmet Popcorn, and Upvas Falahari Mix—are priced at a universal, affordable MRP of ₹10, making authentic Indori crunch accessible to everyone.",
   },
   {
     id: "how-to-order",
