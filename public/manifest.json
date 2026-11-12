@@ -1,0 +1,16 @@
+{
+  "name": "Sffron Snacks - Indira Enterprises, Indore",
+  "short_name": "Sffron Snacks",
+  "description": "Authentic Indori Namkeen, Chips, Cheese Balls & Fasting Mixtures from Lasudia Mori, Dewas Naka, Indore. Universal MRP ₹10.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050508",
+  "theme_color": "#050508",
+  "icons": [
+    {
+      "src": "/logo.webp",
+      "sizes": "192x192 512x512",
+      "type": "image/webp"
+    }
+  ]
+}

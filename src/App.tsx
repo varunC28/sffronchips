@@ -145,6 +145,27 @@ export default function App() {
     return () => window.removeEventListener("resize", updateCount);
   }, []);
 
+  useEffect(() => {
+    const metaTitles = [
+      "Sffron Snacks | Authentic Indori Namkeen, Chips & Puffs | Indira Enterprises Indore",
+      "Indori Snack Stories & Flavor Heritage | Sffron Snacks Blog",
+      "Frequently Asked Questions & Plant Details | Sffron Snacks Indore",
+      "Wholesale, Retailer Distribution & Contact | Sffron Snacks Indore",
+    ];
+    const metaDescriptions = [
+      "Sffron Snacks by Indira Enterprises, Lasudia Mori, Indore. Authentic Indori Masala Rings, Cheese Balls, Spicy Chips, Tasty Peanuts, Banana Chips & Upvas Falahari Mixture at universal ₹10 MRP.",
+      "Explore the secrets behind Indore's crunch obsession, air-puffing food science, Sendha Namak fasting recipes, and teatime pairings from Sffron Snacks.",
+      "Got questions about Sffron Snacks? Read official details on our Lasudia Mori manufacturing plant, ₹10 MRP, shelf life, nitrogen flushing, and wholesale carton deliveries.",
+      "Contact Indira Enterprises in Lasudia Mori, Dewas Naka, Indore for retailer supply, supermarket bulk cartons, and wholesale FMCG distributorship inquiries.",
+    ];
+
+    document.title = metaTitles[activeNav] || metaTitles[0];
+    const metaDescTag = document.querySelector('meta[name="description"]');
+    if (metaDescTag) {
+      metaDescTag.setAttribute("content", metaDescriptions[activeNav] || metaDescriptions[0]);
+    }
+  }, [activeNav]);
+
   const handleWhatsAppOrder = (dish?: Dish) => {
     const phone = "919669955869";
     const text = encodeURIComponent(
