@@ -257,7 +257,7 @@ export function ContactBulkOrder({ onBackToHome }: ContactBulkOrderProps) {
                 </div>
               ) : (
                 /* Interactive Bulk Form */
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleWhatsAppDirect} className="space-y-5">
                   {/* Row 1: Full Name & Company */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
@@ -403,30 +403,11 @@ export function ContactBulkOrder({ onBackToHome }: ContactBulkOrderProps) {
                     ></textarea>
                   </div>
 
-                  {/* Dual Submit Actions: Web Form + Direct WhatsApp */}
-                  <div className="pt-2 flex flex-col sm:flex-row gap-3 items-center">
-                    {/* Primary Form Submit */}
+                  {/* Direct WhatsApp Order Action Button */}
+                  <div className="pt-2">
                     <button
                       type="submit"
-                      disabled={isSubmitting}
-                      className="w-full sm:flex-1 h-12 px-6 rounded-full font-bold text-xs sm:text-sm text-white backdrop-blur-xl border border-white/30 shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.65),inset_0_-1.5px_3px_rgba(0,0,0,0.5),0_10px_28px_-6px_rgba(229,35,42,0.5)] hover:shadow-[inset_0_1.5px_3px_rgba(255,255,255,0.9),0_14px_36px_-4px_rgba(229,35,42,0.7)] hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
-                      style={{
-                        background:
-                          "radial-gradient(120% 140% at 30% 0%, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 55%), rgba(229, 35, 42, 0.45)",
-                      }}
-                    >
-                      {isSubmitting ? (
-                        <span>Sending Request...</span>
-                      ) : (
-                        <span>Submit Bulk Request</span>
-                      )}
-                    </button>
-
-                    {/* Instant WhatsApp Order Connection */}
-                    <button
-                      type="button"
-                      onClick={handleWhatsAppDirect}
-                      className="w-full sm:w-auto h-12 px-6 rounded-full font-bold text-xs sm:text-sm text-white backdrop-blur-xl border border-emerald-400/40 shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.7),inset_0_-1.5px_3px_rgba(0,0,0,0.4),0_10px_28px_-6px_rgba(37,211,102,0.5)] hover:shadow-[inset_0_1.5px_3px_rgba(255,255,255,0.9),0_14px_36px_-4px_rgba(37,211,102,0.7)] hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center cursor-pointer whitespace-nowrap"
+                      className="w-full h-12 px-6 rounded-full font-bold text-xs sm:text-sm text-white backdrop-blur-xl border border-emerald-400/40 shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.7),inset_0_-1.5px_3px_rgba(0,0,0,0.4),0_10px_28px_-6px_rgba(37,211,102,0.5)] hover:shadow-[inset_0_1.5px_3px_rgba(255,255,255,0.9),0_14px_36px_-4px_rgba(37,211,102,0.7)] hover:scale-[1.01] active:scale-95 transition-all flex items-center justify-center cursor-pointer whitespace-nowrap"
                       style={{
                         background:
                           "radial-gradient(120% 140% at 30% 0%, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 60%), rgba(37, 211, 102, 0.42)",
