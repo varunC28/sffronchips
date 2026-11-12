@@ -145,3 +145,17 @@ body {
   background-image: radial-gradient(rgba(255, 255, 255, 0.8) 1px, transparent 0);
   background-size: 24px 24px;
 }
+
+/* Hide Netlify injected badge and feedback drawer */
+#netlify-badge,
+[data-netlify-badge],
+.netlify-badge,
+[id*="netlify-badge"],
+[class*="netlify-badge"],
+netlify-drawer,
+#netlify-drawer {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
