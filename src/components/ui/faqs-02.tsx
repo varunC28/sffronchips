@@ -22,7 +22,7 @@ const FAQS_DATA: FAQItem[] = [
     category: "products",
     question: "What is the price of Sffron snack packs?",
     answer:
-      "All 20 of our signature snacks—including Masala Rings, Cheese Balls, Ratlami Sev, Aloo Bhujia, Punjabi Tadka, Ragi Chips, Gourmet Popcorn, and Upvas Falahari Mix—are priced at a universal, affordable MRP of ₹10, making authentic Indori crunch accessible to everyone.",
+      "All 20 of our signature snacks, including Masala Rings, Cheese Balls, Ratlami Sev, Aloo Bhujia, Punjabi Tadka, Ragi Chips, Gourmet Popcorn, and Upvas Falahari Mix, are priced at a universal, affordable MRP of ₹10, making authentic Indori crunch accessible to everyone.",
   },
   {
     id: "how-to-order",
@@ -148,7 +148,7 @@ export function Faqs02() {
 
               <div className="space-y-2 mb-6 text-xs sm:text-sm text-neutral-300">
                 <p>Lasudia Mori, Dewas Naka, Indore, M.P.</p>
-                <p>Mon – Sat: 9:00 AM – 8:30 PM</p>
+                <p>Monday to Saturday: 9:00 AM to 8:30 PM</p>
                 <p className="text-white font-semibold">+91 96699 55869</p>
               </div>
 

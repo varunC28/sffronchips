@@ -86,7 +86,7 @@
     {
       "id": "sffron-popcorn-cheese-butter",
       "skuNumber": "05",
-      "name": "Sffron Popcorn — Cheese & Butter",
+      "name": "Sffron Popcorn (Cheese & Butter)",
       "category": "popcorn",
       "weight": "25g",
       "mrp": 10,
@@ -101,7 +101,7 @@
     {
       "id": "sffron-popcorn-salt-pepper",
       "skuNumber": "06",
-      "name": "Sffron Popcorn — Salt & Pepper",
+      "name": "Sffron Popcorn (Salt & Pepper)",
       "category": "popcorn",
       "weight": "25g",
       "mrp": 10,
@@ -116,7 +116,7 @@
     {
       "id": "sffron-popcorn-peri-peri",
       "skuNumber": "07",
-      "name": "Sffron Popcorn — Peri Peri",
+      "name": "Sffron Popcorn (Peri Peri)",
       "category": "popcorn",
       "weight": "25g",
       "mrp": 10,

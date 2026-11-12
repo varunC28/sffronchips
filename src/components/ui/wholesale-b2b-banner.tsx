@@ -113,7 +113,7 @@ export function WholesaleB2BBanner({ onNavigateToContact }: WholesaleB2BBannerPr
 
           {/* Subtext info */}
           <p className="text-[11px] sm:text-xs text-neutral-400 text-center mt-5 font-normal">
-            Factory & Wholesale Dispatch: Indira Enterprises, Lasudia Mori, Dewas Naka, Indore • Operational Monday to Saturday (9:00 AM – 8:30 PM)
+            Factory & Wholesale Dispatch: Indira Enterprises, Lasudia Mori, Dewas Naka, Indore • Operational Monday to Saturday (9:00 AM to 8:30 PM)
           </p>
         </div>
       </div>

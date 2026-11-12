@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- Homepage & Core Product Showcase (20 Products) -->
+  <!-- Homepage & Core Product Showcase (19 Products) -->
   <url>
     <loc>https://sffronchips.netlify.app/</loc>
     <lastmod>2026-11-12</lastmod>
@@ -39,7 +39,7 @@
     </image:image>
     <image:image>
       <image:loc>https://sffronchips.netlify.app/sffron-salt-pepper-chips-v2.webp</image:loc>
-      <image:title>Sffron Salt & Pepper Chips (28g Pack, MRP ₹10)</image:title>
+      <image:title>Sffron Salt &amp; Pepper Chips (28g Pack, MRP ₹10)</image:title>
       <image:caption>Crisp ridged golden potato wafers delicately balanced with pure rock salt and coarse crushed black peppercorns.</image:caption>
     </image:image>
     <image:image>
@@ -88,11 +88,6 @@
       <image:caption>Golden split green gram pulses dry-roasted to delicate crunch and seasoned with pure rock salt.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://sffronchips.netlify.app/sffron-premium-tasty-peanut-v2.webp</image:loc>
-      <image:title>Sffron Premium Tasty Peanut (32g Pack, MRP ₹10)</image:title>
-      <image:caption>Whole crunchy peanuts enveloped in a secret 19-spice gram flour crust. Rich in natural protein.</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://sffronchips.netlify.app/saffron-tasty-peanuts-v2.webp</image:loc>
       <image:title>Sffron Tasty Peanuts (32g Pack, MRP ₹10)</image:title>
       <image:caption>High-protein roasted whole peanuts wrapped in a crispy spicy besan crust. Perfect teatime crunch.</image:caption>
@@ -108,9 +103,14 @@
       <image:caption>Traditional fasting mixture packed with crisp potato salli, roasted peanuts, cashews, raisins, and pure Sendha Namak (rock salt).</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://sffronchips.netlify.app/sffron-snack-flavours-gift-basket.webp</image:loc>
+      <image:title>Sffron Snack Flavours Gift Basket (All 19 Flavors Tasting Hamper)</image:title>
+      <image:caption>All in one tasting collection featuring all 19 signature Sffron chips, savory rings, upvas namkeen, and popcorn packs crafted in Indore by Indira Enterprises.</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://sffronchips.netlify.app/logo.webp</image:loc>
       <image:title>Sffron Snacks Brand Logo</image:title>
-      <image:caption>Sffron Snacks &amp; Foods - Indira Enterprises, Indore</image:caption>
+      <image:caption>Sffron Snacks &amp; Foods • Indira Enterprises, Indore</image:caption>
     </image:image>
   </url>
 

@@ -1,7 +1,7 @@
 "use client"
 
 /**
- * Nimbus UI · Liquid Navbar — "Waterline"
+ * Nimbus UI · Liquid Navbar: Waterline
  * A pill of water. The active drop stretches toward the item you pick, splits into
  * droplets on long jumps and merges back with a ripple. The cursor lifts a meniscus,
  * every tap sends a wave along the pill, and each icon plays its own little scene.

@@ -478,7 +478,7 @@ export default function DataRain(props: DataRainProps) {
               deficit = 0.55 * Math.exp(-s / (3 * aE)) * Math.exp(-nn * nn);
             }
 
-            /* potential flow around a cylinder — perturbation part only */
+            /* potential flow around a cylinder: perturbation part only */
             const near = 9 * aE;
             if (d2 < near * near) {
               const rho2 = Math.max(s * s + n * n, aE * aE * 0.64);
@@ -497,7 +497,7 @@ export default function DataRain(props: DataRainProps) {
           }
         }
 
-        /* Lamb–Oseen vortex puffs (decay on their own, so not scaled by influence) */
+        /* Lamb-Oseen vortex puffs (decay on their own, so not scaled by influence) */
         let vorX = 0;
         let vorY = 0;
         for (let j = 0; j < aCount; j++) {
@@ -588,7 +588,7 @@ export default function DataRain(props: DataRainProps) {
       ctx.lineCap = "round";
       ctx.lineJoin = "round";
 
-      /* subtle cursor halo (one gradient, scaled by transform — no allocation) */
+      /* subtle cursor halo (one gradient, scaled by transform, no allocation) */
       if (influence > 0.02 && haloGradient) {
         const speed = Math.sqrt(vcx * vcx + vcy * vcy);
         const r = 1.5 * curA;

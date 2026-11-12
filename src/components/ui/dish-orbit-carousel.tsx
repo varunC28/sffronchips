@@ -531,7 +531,17 @@ export function DishOrbitCarousel({
                 className="dsh-hd"
                 aria-hidden={i !== index}
               >
-                <p className="dsh-eye">{d.eyebrow ?? "#" + (i + 1) + " Most loved snack"}</p>
+                <div className="flex items-center gap-3 mb-1">
+                  <p className="dsh-eye" style={{ margin: 0 }}>
+                    {d.eyebrow ?? "#" + (i + 1) + " Most loved snack"}
+                  </p>
+                  <a
+                    href="#assortment-basket"
+                    className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold text-amber-300 bg-amber-500/10 border border-amber-500/25 hover:bg-amber-500/20 hover:border-amber-500/40 transition-all pointer-events-auto cursor-pointer"
+                  >
+                    <span>Taste All 19 Flavors Basket ↓</span>
+                  </a>
+                </div>
                 <h2 style={{ margin: 0, font: "inherit" }}>
                   <span className="dsh-t1" style={{ fontSize: fitSize(d.title.length, 52, 330, 0.56) + "px" }}>
                     {d.title}
@@ -550,6 +560,7 @@ export function DishOrbitCarousel({
                     onClick={() => onOrder?.(d, i)}
                     aria-label="Order on WhatsApp"
                   >
+                    {Icon.whatsapp}
                     <span>Order on WhatsApp</span>
                   </button>
                 </div>

@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import Lenis from "lenis";
+import "lenis/dist/lenis.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DataRain from "@/components/ui/data-rain";
 import DishOrbitCarousel, { type Dish } from "@/components/ui/dish-orbit-carousel";
 import MobileDishHero from "@/components/ui/mobile-dish-hero";
@@ -9,6 +13,7 @@ import Faqs02 from "@/components/ui/faqs-02";
 import ContactBulkOrder from "@/components/ui/contact-bulk-order";
 import WholesaleB2BBanner from "@/components/ui/wholesale-b2b-banner";
 import BornInIndoreStory from "@/components/ui/born-in-indore-story";
+import AssortmentMixBasket from "@/components/ui/assortment-mix-basket";
 import { MessageCircle, Phone, BookOpen, HelpCircle, PhoneCall } from "lucide-react";
 
 const SFFRON_DISHES: Dish[] = [
@@ -354,24 +359,6 @@ const SFFRON_DISHES: Dish[] = [
     price: "MRP ₹10",
     weight: "38g Pack",
   },
-  // Namkeen without peace sign - Missed Item #6: Premium Tasty Peanut (Purple Bag)
-  {
-    title: "Sffron",
-    subtitle: "Premium Tasty Peanut",
-    image: "/sffron-premium-tasty-peanut-v2.webp",
-    eyebrow: "#20 19-Spice Besan Crust",
-    label: "Premium Peanuts",
-    rating: 4.9,
-    chef: "Sffron Snacks",
-    kitchen: "Lasudia Mori, Dewas Naka, Indore",
-    tagline: "Whole crunchy peanuts enveloped in a secret 19-spice gram flour crust. Rich in natural protein.",
-    description: "Whole crunchy peanuts enveloped in a secret 19-spice gram flour crust. Rich in natural protein.",
-    likes: 1910,
-    highlights: ["19 Spices Coating", "Rich in Protein", "Crunchy Besan Crust", "Teatime Hero"],
-    accent: "#4338CA",
-    price: "MRP ₹10",
-    weight: "32g Pack",
-  },
 ];
 
 const SFFRON_NAV_ITEMS: LiquidNavItem[] = [
@@ -387,6 +374,35 @@ export default function App() {
   const [activeDishIndex, setActiveDishIndex] = useState<number>(0);
   const [navTone, setNavTone] = useState<"light" | "dark">("dark");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+  // Initialize Lenis Smooth Scrolling across desktop, tablet, and mobile
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.15,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      wheelMultiplier: 1.0,
+      touchMultiplier: 1.25,
+      infinite: false,
+    });
+
+    // Synchronize Lenis scroll ticks with GSAP ScrollTrigger
+    lenis.on("scroll", ScrollTrigger.update);
+
+    const updateTicker = (time: number) => {
+      lenis.raf(time * 1000);
+    };
+
+    gsap.ticker.add(updateTicker);
+    gsap.ticker.lagSmoothing(0);
+
+    return () => {
+      gsap.ticker.remove(updateTicker);
+      lenis.destroy();
+    };
+  }, []);
 
   useEffect(() => {
     const updateCount = () => {
@@ -528,6 +544,9 @@ export default function App() {
                 onOrder={handleWhatsAppOrder}
               />
             </div>
+
+            {/* Sffron Snack Assortment Mix Basket Showcase */}
+            <AssortmentMixBasket />
 
             {/* "Born in Indore" Heritage & Craft Story */}
             <BornInIndoreStory

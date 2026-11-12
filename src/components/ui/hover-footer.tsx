@@ -174,7 +174,7 @@ export function HoverFooter({
       text: "Lasudia Mori, Dewas Naka, Indore, M.P.",
     },
     {
-      text: "Open Mon - Sat: 9:00 AM - 8:30 PM",
+      text: "Open Monday to Saturday: 9:00 AM to 8:30 PM",
     },
   ];
 

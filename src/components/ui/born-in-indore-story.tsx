@@ -33,7 +33,7 @@ export function BornInIndoreStory({
             </h2>
 
             <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-normal max-w-2xl mx-auto">
-              In Indore, food isn&apos;t just sustenance—it is an emotion. Sffron Snacks was founded to bottle the street-side magic of the country&apos;s culinary capital into everyday, accessible ₹10 treats.
+              In Indore, food isn&apos;t just sustenance, it is an emotion. Sffron Snacks was founded to bottle the street-side magic of the country&apos;s culinary capital into everyday, accessible ₹10 treats.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export function BornInIndoreStory({
                   Sarafa & 56 Dukan in Every Handful
                 </h3>
                 <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal mb-3">
-                  Indore&apos;s palate is famously exacting. A truly great snack cannot simply be salty or spicy—it demands an intricate interplay of tanginess, subtle sweetness, and deep savory crunch.
+                  Indore&apos;s palate is famously exacting. A truly great snack cannot simply be salty or spicy, it demands an intricate interplay of tanginess, subtle sweetness, and deep savory crunch.
                 </p>
                 <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
                   From our signature Masala Ring dusted with indigenous Malwa spices to our sacred Sendha Namak (Rock Salt) Falahari Mixture formulated for Navratri and Ekadashi fasting, we honor the recipes that built Indore&apos;s reputation as India&apos;s street food capital.

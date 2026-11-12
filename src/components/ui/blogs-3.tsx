@@ -50,7 +50,7 @@ const SFFRON_BLOG_POSTS: BlogPost[] = [
     tags: ["Indore Food", "Malwa Heritage", "Spices", "Street Food"],
     content: [
       "Indore's culinary legacy is built on a simple obsession: no snack should ever be boring. Whether you are walking through the historic night stalls of Sarafa Bazaar or grabbing an evening bite at 56 Dukan, the tastebuds of Indore demand a layered balance of tanginess, crunch, and authentic local masalas.",
-      "At Sffron Snacks, based right in Lasudia Mori, Dewas Naka, Indore, our master recipes are rooted in this deep Malwa heritage. Our seasoning blends are freshly ground and carefully measured to produce an authentic Indori flavor profile—bursting with coriander seed notes, hing (asafoetida), black pepper, and fiery red chili.",
+      "At Sffron Snacks, based right in Lasudia Mori, Dewas Naka, Indore, our master recipes are rooted in this deep Malwa heritage. Our seasoning blends are freshly ground and carefully measured to produce an authentic Indori flavor profile, bursting with coriander seed notes, hing (asafoetida), black pepper, and fiery red chili.",
       "Every single batch of our Masala Rings and Savory Crisps is test-tasted to ensure that the crunch starts light and airy, releasing the aromatic spice burst on the very first bite. That is the true Sffron standard.",
     ],
   },
@@ -79,7 +79,7 @@ const SFFRON_BLOG_POSTS: BlogPost[] = [
   {
     id: "ultimate-upvas-fasting-mix",
     title: "Fast & Feast: Why Sendha Namak & Salli Make the Ultimate Upvas Mix",
-    subtitle: "Navratri, Shivratri, or Ekadashi—authentic fasting namkeen crafted strictly with sendha namak.",
+    subtitle: "Navratri, Shivratri, or Ekadashi, authentic fasting namkeen crafted strictly with sendha namak.",
     category: "Fasting Special",
     readTime: "5 min read",
     date: "Nov 05, 2026",

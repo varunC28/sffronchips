@@ -16,7 +16,7 @@ export function ContactBulkOrder({ onBackToHome }: ContactBulkOrderProps) {
     phone: "",
     city: "Indore",
     orderType: "Retail Store Wholesale (Daily/Weekly)",
-    quantity: "5 - 20 Cartons (Store Restock)",
+    quantity: "5 to 20 Cartons (Store Restock)",
     message: "",
   });
 
@@ -71,7 +71,7 @@ export function ContactBulkOrder({ onBackToHome }: ContactBulkOrderProps) {
       phone: "",
       city: "Indore",
       orderType: "Retail Store Wholesale (Daily/Weekly)",
-      quantity: "5 - 20 Cartons (Store Restock)",
+      quantity: "5 to 20 Cartons (Store Restock)",
       message: "",
     });
   };
@@ -152,7 +152,7 @@ export function ContactBulkOrder({ onBackToHome }: ContactBulkOrderProps) {
                 <p className="text-base sm:text-lg font-bold text-white group-hover:text-red-400 transition-colors mt-1">
                   +91 96699 55869
                 </p>
-                <p className="text-xs text-neutral-400 mt-0.5">Mon – Sat: 9:00 AM – 8:30 PM</p>
+                <p className="text-xs text-neutral-400 mt-0.5">Monday to Saturday: 9:00 AM to 8:30 PM</p>
               </a>
 
               {/* Factory / Depot Address */}
@@ -174,7 +174,7 @@ export function ContactBulkOrder({ onBackToHome }: ContactBulkOrderProps) {
                   Dispatch Schedule
                 </span>
                 <p className="text-sm sm:text-base font-semibold text-white mt-1">
-                  Monday to Saturday • 9:00 AM – 8:30 PM
+                  Monday to Saturday • 9:00 AM to 8:30 PM
                 </p>
                 <p className="text-xs text-neutral-400 mt-0.5">
                   Same-day / next-day delivery across Indore
@@ -393,13 +393,13 @@ export function ContactBulkOrder({ onBackToHome }: ContactBulkOrderProps) {
                           onChange={handleChange}
                           className="w-full h-11 px-3.5 rounded-xl bg-[#141824] border border-white/15 text-white text-xs sm:text-sm focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 appearance-none pr-8 cursor-pointer"
                         >
-                          <option value="1 - 5 Master Cartons (Trial / Party)">
+                          <option value="1 to 5 Master Cartons (Trial / Party)">
                             1 - 5 Master Cartons (Trial / Party)
                           </option>
-                          <option value="5 - 20 Cartons (Store Restock)">
+                          <option value="5 to 20 Cartons (Store Restock)">
                             5 - 20 Cartons (Store Restock)
                           </option>
-                          <option value="20 - 50 Cartons (Wholesale Supply)">
+                          <option value="20 to 50 Cartons (Wholesale Supply)">
                             20 - 50 Cartons (Wholesale Supply)
                           </option>
                           <option value="50+ Master Cartons (Distributor Batch)">
@@ -449,6 +449,93 @@ export function ContactBulkOrder({ onBackToHome }: ContactBulkOrderProps) {
                 </form>
               )}
             </div>
+          </div>
+        </div>
+
+        {/* Factory & Depot Location Map Section */}
+        <div className="mt-12 sm:mt-16 rounded-3xl border border-white/15 bg-[#0B0D14]/90 backdrop-blur-2xl p-6 sm:p-8 lg:p-10 shadow-[0_24px_64px_rgba(0,0,0,0.85),inset_0_1.5px_2px_rgba(255,255,255,0.15)] overflow-hidden">
+          {/* Header Row */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-white/10">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-[11px] font-bold uppercase tracking-wider mb-3">
+                <span>Manufacturing & Dispatch Hub</span>
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                Visit Our Indore Depot
+              </h3>
+              <p className="text-xs sm:text-sm text-neutral-300 mt-1.5 max-w-2xl leading-relaxed">
+                Panchal Compound, Lasudia Mori, Dewas Naka, Indore, Madhya Pradesh 452010. Serving wholesale buyers, retail chains, and direct stockists across Central India.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="https://maps.app.goo.gl/6izeB4VFSod3bfNi8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm text-white backdrop-blur-xl border border-red-500/40 shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.7),inset_0_-1.5px_3px_rgba(0,0,0,0.4),0_10px_28px_-6px_rgba(229,35,42,0.5)] hover:shadow-[inset_0_1.5px_3px_rgba(255,255,255,0.9),0_14px_36px_-4px_rgba(229,35,42,0.7)] transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer whitespace-nowrap"
+                style={{
+                  background:
+                    "radial-gradient(120% 140% at 30% 0%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 60%), rgba(229, 35, 42, 0.55)",
+                }}
+              >
+                <span>Get Directions ↗</span>
+              </a>
+              <a
+                href="https://maps.app.goo.gl/6izeB4VFSod3bfNi8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm text-neutral-200 hover:text-white bg-white/5 hover:bg-white/10 border border-white/15 hover:border-white/30 transition-all duration-200"
+              >
+                <span>Open in Google Maps ↗</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Info Strip */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+            <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-neutral-400 block">
+                Primary Landmark
+              </span>
+              <p className="text-sm font-semibold text-white mt-1">
+                Panchal Compound, Lasudia Mori
+              </p>
+              <p className="text-xs text-neutral-400 mt-0.5">Dewas Naka Industrial Belt</p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-neutral-400 block">
+                Logistics Connectivity
+              </span>
+              <p className="text-sm font-semibold text-white mt-1">
+                AB Road & Dewas Bypass
+              </p>
+              <p className="text-xs text-neutral-400 mt-0.5">Rapid transit across M.P. & Western India</p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-neutral-400 block">
+                Dispatch Desk
+              </span>
+              <p className="text-sm font-semibold text-white mt-1">
+                Monday to Saturday: 9:00 AM to 8:30 PM
+              </p>
+              <p className="text-xs text-neutral-400 mt-0.5">Truck / tempo loading bay on-site</p>
+            </div>
+          </div>
+
+          {/* Embedded Map Frame */}
+          <div className="relative w-full h-[360px] sm:h-[420px] lg:h-[480px] rounded-2xl overflow-hidden border border-white/15 shadow-[0_16px_40px_rgba(0,0,0,0.6)]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3678.5607055377677!2d75.9052672!3d22.7816785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631d316eed5af9%3A0x8d068924f0035b63!2sQWJ4%2BWM7%2C%20Panchal%20Compound%2C%20Lasudia%20Mori%2C%20Indore%2C%20Madhya%20Pradesh%20452010!5e0!3m2!1sen!2sin!4v1794473492598!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Sffron Snacks • Indira Enterprises Location Map (Dewas Naka, Indore)"
+              className="w-full h-full"
+            ></iframe>
           </div>
         </div>
       </div>
