@@ -146,7 +146,13 @@ body {
   background-size: 24px 24px;
 }
 
-/* Hide Netlify injected badge and feedback drawer */
+/* Hide Netlify injected badge, HUD, and frames */
+#nl-badge-frame,
+#nl-hud-frame,
+iframe#nl-badge-frame,
+iframe#nl-hud-frame,
+iframe[title*="Netlify"],
+iframe[src*="netlify"],
 #netlify-badge,
 [data-netlify-badge],
 .netlify-badge,
@@ -158,4 +164,7 @@ netlify-drawer,
   visibility: hidden !important;
   opacity: 0 !important;
   pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  clip-path: path("M0 0Z") !important;
 }

@@ -716,6 +716,56 @@
       ]
     }
     </script>
+
+    <!-- Suppress Netlify Injected Badge & HUD -->
+    <style>
+      #nl-badge-frame,
+      #nl-hud-frame,
+      iframe[title*="Netlify"],
+      iframe[id*="nl-"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        width: 0 !important;
+        height: 0 !important;
+      }
+    </style>
+    <script>
+      (function() {
+        try {
+          localStorage.setItem("nl-hud:public:v1", "hidden");
+          localStorage.setItem("nl-hud:owner-private:v1", "hidden");
+        } catch(e) {}
+
+        function injectStubs() {
+          if (!document.getElementById("nl-badge-frame")) {
+            var b = document.createElement("div");
+            b.id = "nl-badge-frame";
+            b.style.cssText = "display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;";
+            document.documentElement.appendChild(b);
+          }
+          if (!document.getElementById("nl-hud-frame")) {
+            var h = document.createElement("div");
+            h.id = "nl-hud-frame";
+            h.style.cssText = "display:none!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important;";
+            document.documentElement.appendChild(h);
+          }
+        }
+        injectStubs();
+        document.addEventListener("DOMContentLoaded", injectStubs);
+
+        var obs = new MutationObserver(function() {
+          var f1 = document.getElementById("nl-badge-frame");
+          var f2 = document.getElementById("nl-hud-frame");
+          if (f1 && f1.tagName === "IFRAME") f1.remove();
+          if (f2 && f2.tagName === "IFRAME") f2.remove();
+          var iframes = document.querySelectorAll('iframe[title*="Netlify"], iframe[src*="netlify"]');
+          for (var i = 0; i < iframes.length; i++) iframes[i].remove();
+        });
+        obs.observe(document.documentElement, { childList: true, subtree: true });
+      })();
+    </script>
   </head>
   <body class="bg-[#050508] text-white overflow-x-hidden selection:bg-red-500 selection:text-white">
     <div id="root"></div>
